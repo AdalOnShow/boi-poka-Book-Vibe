@@ -1,5 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ==================TailwindCSS Customizations===================== */
 @import "tailwindcss";
 
+@theme {
+  --font-playfairDisplay: "Playfair Display",
+    serif;
+  --font-workSans: "Work Sans", sans-serif;
+  --color-primary: #23BE0A;
+  --color-secondary: #59C6D2;
+}
+
+
+
+/* ===================DaisyUI Customizations======================= */
 @plugin "daisyui" {
   themes: light --default;
+}
+
+@utility btn {
+  @apply text-white font-semibold text-lg px-7 py-6 rounded-xl;
+}
+
+
+* {
+  @apply font-workSans;
+}
+
+.nav-item {
+  @apply px-4 py-3.5 text-[#131313]/80 text-lg;
+}
+
+.active {
+  @apply text-[#23BE0A] font-semibold border border-[#23BE0A] rounded-xl;
 }
