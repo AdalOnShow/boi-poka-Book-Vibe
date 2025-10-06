@@ -24,7 +24,7 @@
 
 
 * {
-  @apply font-workSans;
+  @apply font-workSans text-[#131313];
 }
 
 .nav-item {
